@@ -11,5 +11,9 @@ error: Failed to install: jsonpatch-1.33-py2.py3-none-any.whl (jsonpatch==1.33)
 
 Solution:
 
-setx UV_CACHE_DIR C:\uv-cache 
 echo $env:UV_CACHE_DIR
+setx UV_CACHE_DIR c:\uv-cache  #This doesn't set in the current session, so be careful
+echo $env:UV_CACHE_DIR
+
+$env:UV_CACHE_DIR="c:\uv-cache"
+
