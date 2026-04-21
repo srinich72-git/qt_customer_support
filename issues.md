@@ -17,3 +17,17 @@ echo $env:UV_CACHE_DIR
 
 $env:UV_CACHE_DIR="c:\uv-cache"
 
+Issue 2:
+
+After cloning github repository I didn't see .venv to fix that 
+
+Solution:
+
+uv venv
+.venv\Scripts\activate
+uv sync
+------------------------------------
+after cloning github uv project and syncked I didn't see that kernal for selection, its pops and disaper again in vs code
+sol:
+uv add ipykernal  #double check this fix
+------------------------------------
